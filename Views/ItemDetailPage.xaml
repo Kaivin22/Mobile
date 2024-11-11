@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ItemDetailPage"
+             xmlns:local="clr-namespace:App1.ViewModels"
+             Title="{Binding Title}">
+    <StackLayout>
+        <ListView x:Name="ttHocSinh">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="50,*,*,*,*">
+                            <Label Grid.Column="0" Text ="{Binding HocSinhId}"/>
+                            <Label Grid.Column="1" Text="{Binding HoTen}"/>
+                            <Label Grid.Column="2" Text="{Binding NgaySinh}"/>
+                            <Label Grid.Column="3" Text="{Binding GioiTinh}"/>
+                            <Label Grid.Column="4" Text="{Binding Lop}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:App1.ViewModels"
+             HeightRequest="450" WidthRequest="800"
+             x:Class="App1.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ScrollView>
+
+        <StackLayout Padding="50,0" Spacing="25" BackgroundColor="White">
+            <!-- Logo -->
+            <Image Source="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-truong-dai-hoc-kien-truc-da-nang-inkythuatso-01-25-15-58-10.jpg"
+                   HeightRequest="100" Margin="0,20,0,0"></Image>
+
+            <Label Text="KIẾN TRÚC ĐÀ NẴNG"
+                      VerticalOptions="Center"
+                      FontSize="Large"
+                      Margin="0,0,0,0"
+                      TextColor="Blue"
+                      HorizontalTextAlignment="Center" />       
+
+            <Frame BackgroundColor="#5ED1E1" CornerRadius="10" Padding="10,10,10,40" Margin="0,20,0,0">
+
+                <!-- Username Entry -->
+                <StackLayout Spacing="15" >
+                    <Frame CornerRadius="10" Padding="10" >
+                        <Entry  x:Name="usernameEntry"
+                                Placeholder="Tên đăng nhập"
+                                PlaceholderColor="#666666"
+                                TextColor="Black"
+                                FontSize="16"
+                                />
+                    </Frame>
+
+                    <Frame CornerRadius="10" Padding="10">
+                        <Entry x:Name="passwordEntry"
+                            Placeholder="Mật khẩu" 
+                            IsPassword="True"
+                            PlaceholderColor="#666666"
+                            TextColor="Black"
+                            FontSize="16"/>
+                    </Frame>
+                    
+                    <!-- Login Button -->
+            <Button Text="Đăng nhập"
+                    BackgroundColor="#1877F2"
+                    TextColor="White"
+                    CornerRadius="5"
+                    HeightRequest="45"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Clicked="btnLogin_Click"/>
+                    
+                    
+                </StackLayout>
+            </Frame>
+
+            
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+    

@@ -1,0 +1,2 @@
+C:\Users\PC\source\repos\CNPM\App1\App1\obj\Release\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\CNPM\App1\App1\obj\Release\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig

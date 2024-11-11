@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.NewItemPage"
+             xmlns:local="clr-namespace:App1.ViewModels"
+             Shell.PresentationMode="ModalAnimated"
+             Title="New Item"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="your_logo.png" />
+            <Label Text="THÊM MỚI HỌC SINH" FontSize="Title" HorizontalTextAlignment="Center" />
+            <StackLayout Margin="20">
+                <Entry Placeholder="Tên" x:Name="txtHoTen" />
+                <DatePicker x:Name="txtNgaySinh" Date="{Binding Student.BirthDate, Mode=TwoWay}" />
+                <Picker Title="Giới tính" x:Name="pkGioiTinh">
+                    <Picker.Items>
+                        <x:String>Nam</x:String>
+                        <x:String>Nữ</x:String>
+                    </Picker.Items>
+                </Picker>
+                
+                
+                <Button x:Name="btnThem" Text="Thêm HS" Clicked="btnThem_Clicked" />
+                <Button Text="Cancel" Clicked="btnBack_Click" HorizontalOptions="FillAndExpand" />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

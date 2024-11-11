@@ -1,0 +1,70 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Views.Admin2Page"
+             Title="Admin"
+             >
+    <ContentPage.Content>
+        
+        <Grid BackgroundColor="White">
+            <!-- Thiết lập các dòng và cột -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid  Padding="20" Margin="0,0,0,-6"> 
+            <!-- Logo bên trái -->
+                <Image Source="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-truong-dai-hoc-kien-truc-da-nang-inkythuatso-01-25-15-58-10.jpg" 
+                       HeightRequest="100" WidthRequest="100" />
+            </Grid>
+        
+          
+
+               <Label Text="CHỌN LỚP HỌC"
+                    Grid.Row="1"
+                    VerticalOptions="Center"
+                    FontSize="Large"
+                    Margin="0,30,0,0"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center" />  
+
+            <Button Text="10A1"
+                CornerRadius="20"
+				Grid.Row="2"
+				BackgroundColor="#63D1F6"
+				TextColor="Black"
+				FontSize="18"
+				VerticalOptions="Center"
+				HorizontalOptions="FillAndExpand"
+				Clicked="btn10A1_Click"/>
+
+            <Button Text="10A2"
+                CornerRadius="20"
+	            Grid.Row="3"
+	            BackgroundColor="#63D1F6"
+	            TextColor="Black"
+	            FontSize="18"
+	            VerticalOptions="Center"
+	            HorizontalOptions="FillAndExpand"
+	            Clicked="btn10A2_Click"/>
+
+            <Button Text="Quay lại"
+                CornerRadius="20"
+				Grid.Row="4"
+				BackgroundColor="#DEAF4B"
+				TextColor="White"
+				FontSize="18"
+				VerticalOptions="Center"
+				HorizontalOptions="FillAndExpand"
+				Clicked="btnBack_Click"/>
+        </Grid>
+    </ContentPage.Content>
+
+    
+
+</ContentPage>

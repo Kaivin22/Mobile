@@ -1,0 +1,94 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.ViewModels"
+             x:Class="App1.Views.AdminPage"
+             BackgroundColor="White"
+             Title="Admin">
+    <ContentPage.Content>
+		<StackLayout BackgroundColor="White"> 
+	
+			<!-- Phần tiêu đề với logo và chữ "ADMIN" -->
+			
+			<Grid  Padding="20">
+				
+				<Image Source="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-truong-dai-hoc-kien-truc-da-nang-inkythuatso-01-25-15-58-10.jpg" 
+					  Aspect="AspectFit" HeightRequest="100" WidthRequest="100" />
+			</Grid>
+
+
+				<Label Text="CHỨC NĂNG"
+					Grid.Row="1"
+					VerticalOptions="Center"
+					Margin="0,30,0,0"
+					FontSize="Large"
+					TextColor="Black"
+					HorizontalTextAlignment="Center" />
+
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="Auto" />
+				</Grid.ColumnDefinitions>
+				
+				<Frame CornerRadius="15" Padding="0,20,0,20" Margin="0,50,0,0" BackgroundColor="#63D1F6" Grid.Column="0">
+					<StackLayout Spacing="15" Margin="0,15,0,0">
+						<Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRjlcfhhuVCzrwZqPzJ7H2kVnQLAFMQjzOwDgALt56gMIsOWD" />
+					
+
+						<Label Text="Quản lý thông tin&#x0a;học sinh"
+							   TextColor="#000080"
+							   FontSize="16"
+							   FontAttributes="Bold"
+							   HorizontalTextAlignment="Center"
+							   LineBreakMode="WordWrap"/>
+
+						<Button Text="Xem chi tiết"
+								TextColor="White"
+								BackgroundColor="#4169E1"
+								CornerRadius="20"
+								HeightRequest="40"
+								WidthRequest="120"
+								FontSize="14"
+								Clicked="btnQL_Click"/>
+					</StackLayout>
+				</Frame>
+
+				<Frame CornerRadius="15" Padding="0,20,0,20" Margin="0,50,0,0" BackgroundColor="#63D1F6" Grid.Column="1">
+					<StackLayout Spacing="15" >
+						<Image Source="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQz0RTkL9aaf7JG0wftez_rWgZQKsyUaJYax5mTEwsfSjOIzGmT" />
+
+						<Label Text="Quản lý lịch học&#x0a;học sinh"
+							   TextColor="#000080"
+							   FontSize="16"
+							   FontAttributes="Bold"
+							   HorizontalTextAlignment="Center"
+							   LineBreakMode="WordWrap"/>
+
+						<Button Text="Xem chi tiết"
+								TextColor="White"
+								BackgroundColor="#4169E1"
+								CornerRadius="20"
+								HeightRequest="40"
+								WidthRequest="120"
+								FontSize="14"/>
+					</StackLayout>
+				</Frame>
+				
+			</Grid>
+			
+			<Button Text="Đăng xuất"
+					CornerRadius="20"
+					BackgroundColor="Gray"
+					TextColor="White"
+					FontSize="18"
+					Margin="0,70,0,0"
+					VerticalOptions="Center"
+					HorizontalOptions="FillAndExpand"
+					Clicked="btnĐX_Click"/>
+			
+
+		</StackLayout>
+		
+		
+    </ContentPage.Content>
+</ContentPage>

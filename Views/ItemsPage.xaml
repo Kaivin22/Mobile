@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ItemsPage"
+             xmlns:local="clr-namespace:App1.ViewModels"
+             xmlns:model="clr-namespace:App1.Models"  
+             x:Name="BrowseItemsPage"
+             Title="Danh sách học sinh 10A1">
+    <ContentPage.Content>
+        <StackLayout>
+        <ListView x:Name="lstHocSinh">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="50,*,*,*,*">
+                            <Label Grid.Column="0" Text="{Binding HocSinhId}"/>
+                            <Label Grid.Column="1" Text="{Binding HoTen}"/>
+                            <Label Grid.Column="2" Text="{Binding NgaySinh}"/>
+                            <Label Grid.Column="3" Text="{Binding GioiTinh}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+            
+            <Button Text="Quay lại"
+                    CornerRadius="40"
+		            BackgroundColor="Gray"
+		            TextColor="White"
+		            FontSize="18"
+		            VerticalOptions="Center"
+		            HorizontalOptions="FillAndExpand"
+		            Clicked="btnBack_Clicked"/>
+
+            <Button Text="Thêm học sinh"
+                    CornerRadius="40"
+                    BackgroundColor="Gray"
+                    TextColor="White"
+                    FontSize="18"
+                    VerticalOptions="Center"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="btnAdd_Clicked"/>  
+            
+        </StackLayout>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
